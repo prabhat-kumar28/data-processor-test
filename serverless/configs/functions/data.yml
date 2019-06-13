@@ -1,0 +1,14 @@
+  data:
+    name: data-processor-${opt:stage, self:provider.stage}
+    handler: src/handlers/${self:provider.name}/data-processor-handler.handle
+    role: arn:aws:iam::820643439592:role/LambdaS3Execute
+    timeout: 300
+    package:
+      include:
+        - src/handlers/${self:provider.name}/data-processor-handler.js
+        - node_modules/data-processor/**
+    events:
+      - http:
+          path: data
+          method: post
+          cors: true

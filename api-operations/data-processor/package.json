@@ -1,0 +1,23 @@
+{
+    "name": "data-processor",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --detectOpenHandles"
+    },
+    "dependencies": {
+        "aws-sdk": "^2.463.0",
+        "chai": "^4.2.0",
+        "generic-exception": "git+https://github.com/MukeshTravelex/generic-exception.git",
+        "jest": "^24.8.0",
+        "jsonpath": "^1.0.1",
+        "mocha": "^6.1.4",
+        "node-i18n-util": "^1.0.5",
+        "tvxcloud": "git+https://github.com/MukeshTravelex/tvxcloud.git",
+        "uuid": "^3.3.2"
+    },
+    "license": "ISC",
+    "devDependencies": {},
+    "author": "Prabhat"
+}
